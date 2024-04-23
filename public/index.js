@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (errores.hasOwnProperty(key)) {
         const errorMessage = errores[key];
         const errorElement = document.getElementById(`error-${key}`);
-        errorElement.textContent =
+        errorElement?.textContent =
           errorMessage.length > 0 ? errorMessage[0] : "";
       }
     }
@@ -150,6 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Asignar el evento onSubmit al formulario
-  const form = document.querySelector(".form");
+  const form = document.querySelector("#form-use");
   form.addEventListener("submit", onSubmit);
 });
