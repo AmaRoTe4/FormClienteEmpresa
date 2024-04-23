@@ -1,0 +1,115 @@
+@import url("https://cdn.jsdelivr.net/npm/normalize.css");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #374151;
+  width: 100%;
+  max-width: 100%;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e5e7eb;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+}
+
+.error-message {
+  color: #ef4444;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form-item label {
+  width: 100%;
+}
+
+.form-item input[type="text"],
+.form-item textarea,
+.form-item select {
+  width: 90%;
+  max-width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+}
+
+.form-item textarea {
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.error-message {
+  width: 100%;
+  text-align: start;
+  color: red;
+}
+
+button[type="submit"] {
+  width: 90%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}

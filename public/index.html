@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" onsubmit="return onSubmit(event)">
+            <div class="form-item">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                <p class="error-message" id="error-nombre"></p>
+            </div>
+            <div class="form-item">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" id="empresa" placeholder="empresa">
+                <p class="error-message" id="error-empresa"></p>
+            </div>
+            <div class="form-item">
+                <label for="direccion">Dirección <span>(opcional)</span></label>
+                <input type="text" name="direccion" id="direccion" placeholder="dirección">
+                <p class="error-message" id="error-direccion"></p>
+            </div>
+            <div class="form-item">
+                <label for="redes_sociales">Redes Sociales <span>(opcional)</span></label>
+                <input type="text" name="redes_sociales" id="redes_sociales" placeholder="redes sociales">
+                <p class="error-message" id="error-redes-sociales"></p>
+            </div>
+            <div class="form-item">
+                <label for="telefono">Teléfono <span>(opcional)</span></label>
+                <input type="text" name="telefono" id="telefono" placeholder="teléfono">
+                <p class="error-message" id="error-telefono"></p>
+            </div>
+            <div class="form-item">
+                <label for="observaciones">Observaciones <span>(opcional)</span></label>
+                <textarea name="observaciones" id="observaciones" placeholder="observaciones"></textarea>
+                <p class="error-message" id="error-observaciones"></p>
+            </div>
+            <div class="form-item">
+                <label for="vendedor">Vendedor</label>
+                <select id="vendedor" name="vendedor">
+                    <option value="">Seleccionar vendedor</option>
+                    <option value="Lucas Paulon">Lucas Paulon</option>
+                    <option value="Ivan Anic">Ivan Anic</option>
+                    <option value="Federico Fontana">Federico Fontana</option>
+                    <option value="Tomas Alanis">Tomas Alanis</option>
+                    <option value="Tomas Cian">Tomas Cian</option>
+                    <option value="Tomas Carrasco">Tomas Carrasco</option>
+                    <option value="Amaro Cattarozzi">Amaro Cattarozzi</option>
+                    <option value="Celina Muchiut">Celina Muchiut</option>
+                    <option value="Macarena Bonavena">Macarena Bonavena</option>
+                    <option value="Patricio Cian">Patricio Cian</option>
+                    <option value="Cande">Cande</option>
+                </select>
+                <p class="error-message" id="error-vendedor"></p>
+            </div>
+            <div class="form-item">
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
